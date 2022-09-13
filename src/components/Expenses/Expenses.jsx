@@ -15,6 +15,7 @@ const Expenses = (props) => {
     return expense.date.getFullYear().toString() === filteredYear;
   });
 
+  // 컨텐츠는 기본적으로 내용이 없고, 검색된 내용이 있으면 아래의 if문 내용 출력하기
   let expensesContent = <p>No expenses found.</p>;
 
   if (filteredExpenses.length > 0) {
